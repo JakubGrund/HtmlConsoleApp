@@ -1,12 +1,16 @@
 ﻿using System;
+using System.Xml.Linq;
 
 namespace HtmlConsoleApp
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            
+            XDocument inputDocument = XDocument.Load(@"C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\data\HTMLEditor_data_IN.html");
+            string outputDocument = (@"C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\data\HTMLEditor_data_OUT.html");
+
+
         }
     }
 }
