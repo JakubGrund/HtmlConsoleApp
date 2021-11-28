@@ -13,8 +13,12 @@ namespace HtmlConsoleApp
 
 		static void Main()
         {
+			/* Nacteni dat IN and OUT HTML Souboru */
+
             XDocument inputDocument = XDocument.Load(@"C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\data\HTMLEditor_data_IN.html");
             string outputDocument = (@"C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\data\HTMLEditor_data_OUT.html");
+
+			// Hlavni nabidka dvou metod 
 
 			showMainMenu();
 			var option = Console.ReadKey().Key;
@@ -31,29 +35,29 @@ namespace HtmlConsoleApp
 			}
 			else
 			{
-				Main();
+				Main(); // V pripade ze se zmackne spatna hodnota 
 			}
 
-			selectedIndex = int.Parse(Console.ReadKey().KeyChar.ToString());
+			selectedIndex = int.Parse(Console.ReadKey().KeyChar.ToString()); // Prevedeni na cislo
 
 			if (selectedOption == "delete")
 			{
-				selectedIndex++;
+				selectedIndex++; //zvyseni indexu id 
 
-				XElement element =
+				XElement element = 
 					inputDocument.Descendants().
 					SingleOrDefault(e => ((string)e.Attribute("id")) == selectedIndex.ToString());
 
-				if (element != null)
+				if (element != null) // kdybzch menil 7
 				{
 					/*Odebrani posledniho znaku*/
 					//element.Value = element.Value.Remove(element.Value.Length - 1);
 
 					/*Odebrani prvniho znaku*/
 
-					element.Value = element.Value.Remove(0, 1);
+					element.Value = element.Value.Remove(0, 1); 
 
-					using (StreamWriter sw = File.CreateText(outputDocument))
+					using (StreamWriter sw = File.CreateText(outputDocument)) // jak vytvorit vystupni soubor 
 					{
 						sw.Write(inputDocument);
 					}
@@ -72,7 +76,7 @@ namespace HtmlConsoleApp
 
 				XElement firstElement =
 					inputDocument.Descendants().
-					SingleOrDefault(e => ((string)e.Attribute("id")) == selectedIndex.ToString());
+					SingleOrDefault(e => ((string)e.Attribute("id")) == selectedIndex.ToString()); // prvni zadanej element
 
 				selectedIndex++;
 
@@ -81,24 +85,23 @@ namespace HtmlConsoleApp
 					SingleOrDefault(e => ((string)e.Attribute("id")) == selectedIndex.ToString());
 
 
-				if (firstElement != null && secondElement != null)
+				if (firstElement != null && secondElement != null) // overeni jestli je nasel 
 				{
 
 					firstElement.Value = firstElement.Value + secondElement.Value;
+					secondElement.Value = "";
 
 					using (StreamWriter sw = File.CreateText(outputDocument))
 					{
 						sw.Write(inputDocument);
 					}
 
-					//Console.Write(secondElement.Parent.Name);
-
 					Console.Write("\n\n HOTOVO! :) \n\n\n");
 				}
 				else
 				{
 					Console.Clear();
-					Console.Write("Byl zadán neplatný index! \n\n");
+					Console.Write("Byl zadán neplatný index!\n\n");
 				}
 			}
 		}
@@ -114,7 +117,7 @@ namespace HtmlConsoleApp
 		static void showIndexMenu()
 		{
 			Console.Clear();
-			Console.Write("Zadejte index textu pro operaci (1-7): \n\n");
+			Console.Write("Zadejte index textu pro operaci (v tomto případě 1-6): \n\n");
 			Console.Write("Vámi vybraná možnost: ");
 		}
 
