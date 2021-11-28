@@ -1,0 +1,16 @@
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\HtmlConsoleApp.csproj.AssemblyReference.cache
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\HtmlConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\HtmlConsoleApp.AssemblyInfoInputs.cache
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\HtmlConsoleApp.AssemblyInfo.cs
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\HtmlConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\bin\Debug\net5.0\HtmlConsoleApp.exe
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\bin\Debug\net5.0\HtmlConsoleApp.deps.json
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\bin\Debug\net5.0\HtmlConsoleApp.runtimeconfig.json
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\bin\Debug\net5.0\HtmlConsoleApp.runtimeconfig.dev.json
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\bin\Debug\net5.0\HtmlConsoleApp.dll
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\bin\Debug\net5.0\ref\HtmlConsoleApp.dll
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\bin\Debug\net5.0\HtmlConsoleApp.pdb
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\HtmlConsoleApp.dll
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\ref\HtmlConsoleApp.dll
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\HtmlConsoleApp.pdb
+C:\Users\Jakub\Desktop\HtmlConsoleApp\HtmlConsoleApp\obj\Debug\net5.0\HtmlConsoleApp.genruntimeconfig.cache
