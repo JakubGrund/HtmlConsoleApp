@@ -85,16 +85,21 @@ namespace HtmlConsoleApp
 					SingleOrDefault(e => ((string)e.Attribute("id")) == selectedIndex.ToString());
 
 
-				if (firstElement != null && secondElement != null) // overeni jestli je nasel 
+				if (firstElement != null && secondElement != null) // overeni jestli je nasel a nema null 
 				{
 
 					firstElement.Value = firstElement.Value + secondElement.Value;
-					secondElement.Value = "";
+
+					//Kdybych chtel druhou hodnotu nechat smazat
+					//secondElement.Value = "";
 
 					using (StreamWriter sw = File.CreateText(outputDocument))
 					{
 						sw.Write(inputDocument);
 					}
+
+					//zkousel jsem zachovani toho text, tohle mi vypise b u prikladu id 5 , vypise to jmeno rodicovskeho elementu (element nad i)
+					//Console.Write(secondElement.Parent.Name); 
 
 					Console.Write("\n\n HOTOVO! :) \n\n\n");
 				}
