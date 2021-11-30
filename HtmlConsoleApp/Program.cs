@@ -44,11 +44,12 @@ namespace HtmlConsoleApp
 			{
 				selectedIndex++; //zvyseni indexu id 
 
+				//najde mi element, je tu to.string jinak by byl error
 				XElement element = 
 					inputDocument.Descendants().
-					SingleOrDefault(e => ((string)e.Attribute("id")) == selectedIndex.ToString());
+					SingleOrDefault(e => ((string)e.Attribute("id")) == selectedIndex.ToString()); 
 
-				if (element != null) // kdybzch menil 7
+				if (element != null) 
 				{
 					/*Odebrani posledniho znaku*/
 					//element.Value = element.Value.Remove(element.Value.Length - 1);
